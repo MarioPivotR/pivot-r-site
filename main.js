@@ -8,16 +8,18 @@ const EN = {
   "nav.approach": "Approach", "nav.ai": "AI", "nav.method": "How we work", "nav.offer": "Offering",
   "slogan": "Structuring transformation. Securing evolution.",
   "hero.title": "Configure your business apps. <span>Without recoding them.</span>",
-  "hero.lead": "Pivot-R is a platform for Microsoft Power Platform and Dataverse. It brings together business modules and a configurable workspace, so each organization gets a solution that fits it, without custom development. AI services are in development.",
+  "hero.lead": "Pivot-R is a platform for Microsoft Power Platform and Dataverse. It will bring together business modules and a configurable workspace, so each organization gets a solution that fits it, without custom development.",
+  "hero.status": "We are looking for a few pioneer organizations to help shape the first versions.",
+  "st.wip": "In development", "st.plan": "Planned", "st.vision": "Exploring",
   "hero.cta1": "Discuss your project", "hero.cta2": "See the modules",
   "f1": "Dataverse-native", "f2": "English and French", "f3": "Integrated with Microsoft 365", "f4": "Built in Québec",
   "ap.title": "One shared platform. A solution that fits you.",
-  "ap.lead": "Pivot-R installs in your Microsoft environment and adapts to the way you work. Your rules, labels and processes are configured, not custom-built.",
+  "ap.lead": "Pivot-R is designed to install in your Microsoft environment and adapt to the way you work. Your rules, labels and processes will be configured, not custom-built.",
   "ap.c1.t": "Configure instead of recode", "ap.c1.p": "Columns, filters, colours, visual rules and record views are set up screen by screen.",
   "ap.c2.t": "Your data stays with you", "ap.c2.p": "Everything runs on Dataverse, in your own Microsoft 365 environment. Your existing roles and access rights keep applying.",
-  "ap.c3.t": "A solution that keeps improving", "ap.c3.p": "Every update is validated before it reaches production. You get the improvements without losing your settings.",
+  "ap.c3.t": "A solution that keeps improving", "ap.c3.p": "Every update will be validated before it reaches production. You will get the improvements without losing your settings.",
   "ws.title": "The working interface standard views don't give you.",
-  "ws.lead": "The Workspace replaces the standard lists in your Power Apps with a fast, bilingual workspace designed for desktop, tablet and phone.",
+  "ws.lead": "The Workspace, the core of Pivot-R, will replace the standard lists in your Power Apps with a fast, bilingual workspace designed for desktop, tablet and phone.",
   "d.title": "Service requests", "d.filter": "My open", "d.group": "By status",
   "d.c1": "Request", "d.c2": "Requester", "d.c3": "Status", "d.c4": "Hours", "d.total": "Total",
   "d.rec": "New workstation, HR", "d.t1": "Details", "d.t2": "Comments", "d.t3": "Documents", "d.resolve": "RESOLVE",
@@ -29,7 +31,7 @@ const EN = {
   "ws.f5.t": "Record panel and collaboration", "ws.f5.p": "A side panel with tabs, comments, mentions, documents and actions such as opening a Teams chat.",
   "ws.f6.t": "Several ways to see your data", "ws.f6.p": "Grid, phone list, pipeline, calendar and Gantt, in English and in French.",
   "mo.ref": "Business modules", "mo.title": "Complete business domains, on the same platform.",
-  "mo.lead": "Choose the modules that match your operations. They share the same interface and adapt to your vocabulary and your forms.",
+  "mo.lead": "The planned modules will cover complete business domains. They will share the same interface and adapt to your vocabulary and your forms.",
   "mo.m1": "Accounts, customer relationship, sales, billing, collections and after-sales service.",
   "mo.m2.t": "Human resources", "mo.m2": "Staffing, training, absences and leave, disciplinary notices, work permits, skills matrix.",
   "mo.m3.t": "Health and safety", "mo.m3": "Incidents, risk prioritization, corrective actions, Gemba walks, audits and registers.",
@@ -39,8 +41,7 @@ const EN = {
   "mo.m7.t": "Knowledge base", "mo.m7": "Internal articles and procedures, easy to find and keep current.",
   "mo.m8": "Analytics, automation, external portal, integrations, e-signature, capacity management.",
   "ia.title": "Artificial intelligence working for your operations.",
-  "ia.lead": "We are developing AI services connected to your Dataverse data. Here are the first areas we are exploring.",
-  "st.dev": "In development",
+  "ia.lead": "We are exploring AI services connected to your Dataverse data. Here are the first areas under study.",
   "ia.cta": "Does one of these needs apply to you? <a href=\"#contact\">Let's talk</a>. Your real cases shape our priorities.",
   "ia.l1.t": "Document reading", "ia.l1.p": "Extract information from forms and scanned documents.",
   "ia.l2.t": "Intelligent search", "ia.l2.p": "Find information by meaning, not just keywords.",
@@ -58,7 +59,7 @@ const EN = {
   "md.c2.p": "The business domains you choose.",
   "md.c3.p": "Additional capabilities, such as analytics or an external portal.",
   "md.c4.p": "AI services tailored to your operations.",
-  "md.note": "Write to us for a proposal fitted to your organization.",
+  "md.note": "Pivot-R is in development. Write to us to become a pioneer organization or to follow its progress.",
   "nav.why": "Why",
   "wh.ref": "Why Pivot-R", "wh.title": "Solid foundations for manufacturers.", "wh.since": "Since 2003",
   "wh.r1": "Drafting", "wh.r2": "Project management", "wh.r3": "Sales", "wh.r4": "Continuous improvement", "wh.r5": "IT and innovation", "wh.r6": "Digital and cyber",
@@ -68,7 +69,7 @@ const EN = {
   "wh.p4": "Power Platform offers great flexibility, yet it is still little known in Québec. Pivot-R brings together that flexibility, customization and solid foundations, in solutions that evolve with new technologies.",
   "wh.role": "Founder, Pivot-R",
   "ct.title": "Let's talk about your processes.",
-  "ct.lead": "Already using Power Platform, or considering it? Describe what slows you down today. We'll look together at what Pivot-R can configure for you.",
+  "ct.lead": "Already using Power Platform, or considering it? Describe what slows you down today. We'll look together at what Pivot-R could configure for you, and how to take part as a pioneer organization.",
   "ct.cta": "Email the team", "ct.copy": "Copy", "ct.copied": "Copied",
   "ct.k1": "Email", "ct.k2": "Languages", "ct.k3": "Region", "ct.k4": "Platform",
   "ft": "Microsoft, Power Platform, Dataverse and Teams are trademarks of Microsoft Corporation."
@@ -76,7 +77,7 @@ const EN = {
 const FR_EXTRA = { "ct.copied": "Copié" };
 
 const META = {
-  en: "Pivot-R: a platform for Microsoft Power Platform and Dataverse, with a configurable Workspace and business modules fitted to your organization, and AI services in development."
+  en: "Pivot-R: a platform in development for Microsoft Power Platform and Dataverse, with a configurable Workspace and business modules fitted to your organization."
 };
 
 document.addEventListener("DOMContentLoaded", () => {

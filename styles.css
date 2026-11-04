@@ -178,7 +178,8 @@ table.spec{width:100%;border-collapse:collapse;min-width:620px}
 .band h2{color:var(--silver-100)}
 .band .intro{color:var(--silver-300)}
 .band .state.vision{color:var(--silver-100);border-color:var(--silver-300)}
-.sec-head .ref .state{margin-left:10px;vertical-align:middle}
+.sec-head .ref:has(.state){display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px}
+.hero-status{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin:0;font-size:16px;color:var(--muted);max-width:38em}
 .band-cta{margin:24px 0 0;color:var(--silver-300)}
 .band-cta a{color:var(--silver-100);font-weight:600;text-underline-offset:3px}
 .band-cta a:hover{color:#fff}
