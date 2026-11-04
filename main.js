@@ -8,7 +8,7 @@ const EN = {
   "nav.approach": "Approach", "nav.ai": "AI", "nav.method": "How we work", "nav.offer": "Offering",
   "slogan": "Structuring transformation. Securing evolution.",
   "hero.title": "Configure your business apps. <span>Without recoding them.</span>",
-  "hero.lead": "Pivot-R is a platform for Microsoft Power Platform and Dataverse. It brings together business modules, a configurable workspace and AI services, so each organization gets a solution that fits it, without custom development.",
+  "hero.lead": "Pivot-R is a platform for Microsoft Power Platform and Dataverse. It brings together business modules and a configurable workspace, so each organization gets a solution that fits it, without custom development. AI services are in development.",
   "hero.cta1": "Discuss your project", "hero.cta2": "See the modules",
   "f1": "Dataverse-native", "f2": "English and French", "f3": "Integrated with Microsoft 365", "f4": "Built in Québec",
   "ap.title": "One shared platform. A solution that fits you.",
@@ -39,7 +39,9 @@ const EN = {
   "mo.m7.t": "Knowledge base", "mo.m7": "Internal articles and procedures, easy to find and keep current.",
   "mo.m8": "Analytics, automation, external portal, integrations, e-signature, capacity management.",
   "ia.title": "Artificial intelligence working for your operations.",
-  "ia.lead": "AI services connected to your Dataverse data, to do in minutes what takes hours today.",
+  "ia.lead": "We are developing AI services connected to your Dataverse data. Here are the first areas we are exploring.",
+  "st.dev": "In development",
+  "ia.cta": "Does one of these needs apply to you? <a href=\"#contact\">Let's talk</a>. Your real cases shape our priorities.",
   "ia.l1.t": "Document reading", "ia.l1.p": "Extract information from forms and scanned documents.",
   "ia.l2.t": "Intelligent search", "ia.l2.p": "Find information by meaning, not just keywords.",
   "ia.l3.t": "Drawing analysis and quantity take-off", "ia.l3.p": "Recognize the elements of a drawing and extract their quantities.",
@@ -74,7 +76,7 @@ const EN = {
 const FR_EXTRA = { "ct.copied": "Copié" };
 
 const META = {
-  en: "Pivot-R: a platform for Microsoft Power Platform and Dataverse, with a configurable Workspace, business modules and AI services fitted to your organization."
+  en: "Pivot-R: a platform for Microsoft Power Platform and Dataverse, with a configurable Workspace and business modules fitted to your organization, and AI services in development."
 };
 
 document.addEventListener("DOMContentLoaded", () => {
