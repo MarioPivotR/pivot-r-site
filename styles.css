@@ -71,7 +71,18 @@ nav.main a:hover{border-bottom-color:var(--accent)}
 @media (max-width:1100px){nav.main{display:none}.lang{margin-left:auto}}
 /* Menu resserré, puis masqué, quand il ne tient pas sur une ligne (voir main.js) */
 .top.nav-tight nav.main{gap:14px}.top.nav-tight nav.main a{letter-spacing:.05em}
-.top.nav-hide nav.main{display:none}.top.nav-hide .lang{margin-left:auto}
+.menu-btn{display:none;flex:none;align-items:center;gap:8px;margin-right:-12px;appearance:none;border:1px solid var(--control);background:var(--surface);color:var(--ink);font:600 13px/1 var(--font-display);letter-spacing:.12em;text-transform:uppercase;padding:8px 12px;border-radius:var(--radius-md);cursor:pointer}
+.menu-btn[aria-expanded="true"]{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+/* Écran étroit (classe posée par main.js) : bouton Menu et panneau déroulant */
+.top.narrow nav.main{display:none}
+.top.narrow .menu-btn{display:inline-flex;margin-left:auto}
+.top.narrow .lang{margin-left:0}
+.top.narrow.nav-open nav.main{display:flex;flex-direction:column;gap:0;margin:0;position:absolute;top:100%;left:0;right:0;max-height:calc(100dvh - 120px);overflow-y:auto;background:var(--surface);border-bottom:1px solid var(--border);padding:4px max(24px,env(safe-area-inset-right,0px)) 12px max(24px,env(safe-area-inset-left,0px))}
+.top.narrow.nav-open nav.main a{font-size:18px;padding:14px 0;border-bottom:1px solid var(--border)}
+.top.narrow.nav-open nav.main a:last-child{border-bottom:0}
+@media (max-width:600px){.top.narrow.nav-open nav.main{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}}
+@media (max-width:480px){.menu-btn span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.menu-btn{padding:8px 10px}.top .wrap{gap:16px}.menu-btn{margin-right:-4px}}
+@media (max-width:370px){.logo img{height:22px}.top .wrap{gap:12px}.lang button{padding:8px}.menu-btn{padding:8px;margin-right:0}}
 @media (max-width:420px){.logo img{height:28px}}
 
 /* ---------- Boutons ---------- */

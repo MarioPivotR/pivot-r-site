@@ -151,12 +151,29 @@ document.addEventListener("DOMContentLoaded", () => {
   // Si le menu ne tient pas sur une ligne, il se resserre, puis se masque en dernier recours.
   const top = document.querySelector("header.top");
   const topWrap = top && top.querySelector(".wrap");
+  // Quand le menu est masqué, un bouton Menu l'ouvre en panneau déroulant.
+  const menuBtn = top && top.querySelector(".menu-btn");
+  const smallScreen = window.matchMedia("(max-width:1100px)");
+  function setMenu(open) {
+    if (!menuBtn) return;
+    top.classList.toggle("nav-open", open);
+    menuBtn.setAttribute("aria-expanded", String(open));
+  }
   function fitNav() {
     if (!topWrap) return;
     const over = () => topWrap.scrollWidth > topWrap.clientWidth;
-    top.classList.remove("nav-tight", "nav-hide");
-    if (over()) top.classList.add("nav-tight");
-    if (over()) top.classList.add("nav-hide");
+    top.classList.remove("nav-tight", "narrow");
+    if (!smallScreen.matches && over()) top.classList.add("nav-tight");
+    if (smallScreen.matches || over()) top.classList.add("narrow");
+    if (!top.classList.contains("narrow")) setMenu(false);
+  }
+  if (menuBtn) {
+    menuBtn.addEventListener("click", () => setMenu(menuBtn.getAttribute("aria-expanded") !== "true"));
+    top.querySelectorAll("nav.main a").forEach(a => a.addEventListener("click", () => setMenu(false)));
+    document.addEventListener("keydown", e => {
+      if (e.key === "Escape" && top.classList.contains("nav-open")) { setMenu(false); menuBtn.focus(); }
+    });
+    document.addEventListener("click", e => { if (!top.contains(e.target)) setMenu(false); });
   }
   window.addEventListener("resize", fitNav);
   document.querySelectorAll(".lang button").forEach(b => b.addEventListener("click", fitNav));
