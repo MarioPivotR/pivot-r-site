@@ -5,7 +5,7 @@ const CONTACT_EMAIL = "info@pivot-r.com";
 
 const EN = {
   "skip": "Skip to content",
-  "nav.approach": "Approach", "nav.ai": "AI", "nav.method": "How we work", "nav.offer": "Offering",
+  "nav.approach": "Approach", "nav.ai": "AI", "nav.method": "How we work", "nav.offer": "Offering", "nav.custom": "Tailored",
   "slogan": "Structuring transformation. Securing evolution.",
   "hero.title": "Configure your business apps. <span>Without recoding them.</span>",
   "hero.lead": "Pivot-R is a platform for Microsoft Power Platform and Dataverse. It will bring together business modules and a configurable workspace, so each organization gets a solution that fits its reality.",
@@ -148,7 +148,22 @@ document.addEventListener("DOMContentLoaded", () => {
     const s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
   }
 
+  // Si le menu ne tient pas sur une ligne, il se resserre, puis se masque en dernier recours.
+  const top = document.querySelector("header.top");
+  const topWrap = top && top.querySelector(".wrap");
+  function fitNav() {
+    if (!topWrap) return;
+    const over = () => topWrap.scrollWidth > topWrap.clientWidth;
+    top.classList.remove("nav-tight", "nav-hide");
+    if (over()) top.classList.add("nav-tight");
+    if (over()) top.classList.add("nav-hide");
+  }
+  window.addEventListener("resize", fitNav);
+  document.querySelectorAll(".lang button").forEach(b => b.addEventListener("click", fitNav));
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitNav);
+
   const yr = document.getElementById("yr");
   if (yr) yr.textContent = String(new Date().getFullYear());
   apply(lang);
+  fitNav();
 });

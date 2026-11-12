@@ -69,6 +69,9 @@ nav.main a:hover{border-bottom-color:var(--accent)}
 .lang button:last-child{border-left:0;border-radius:0 var(--radius-md) var(--radius-md) 0}
 .lang button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
 @media (max-width:1100px){nav.main{display:none}.lang{margin-left:auto}}
+/* Menu resserré, puis masqué, quand il ne tient pas sur une ligne (voir main.js) */
+.top.nav-tight nav.main{gap:14px}.top.nav-tight nav.main a{letter-spacing:.05em}
+.top.nav-hide nav.main{display:none}.top.nav-hide .lang{margin-left:auto}
 @media (max-width:420px){.logo img{height:28px}}
 
 /* ---------- Boutons ---------- */
